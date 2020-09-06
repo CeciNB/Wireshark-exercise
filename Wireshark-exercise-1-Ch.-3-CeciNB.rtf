@@ -1,0 +1,62 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red127\green127\blue127;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c57046\c57047\c57046;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 From gaia trace:\
+\
+Opgave 1\
+What is the IP address and TCP port number used by the client computer (source) that is transferring the file to gaia.cs.umass.edu?\cf0 \
+\cf3 Source IP: 192.168.1.102 Source Port: 1161 \cf0 \
+\
+\cf2 Opgave 2\
+What is the IP address of gaia.cs.umass.edu? On what port number is it sending and receiving TCP segments for this connection?\cf0 \
+Destination IP: 128.119.245.12 Port: 80\
+\
+\cf2 Rest of the assignment from my trace:\
+\
+Opgave 3 \
+What is the IP address and TCP port number used by your client computer (source) to transfer the file to gaia.cs.umass.edu? \cf0 \
+My IP: 172.20.10.2 My Port: 56556\
+\
+\cf2 Opgave 4\
+What is the sequence number of the TCP SYN segment that is used to initiate the TCP connection between the client computer and gaia.cs.umass.edu?\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 SEQ.NO. = 0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf2 What is it in the segment that identifies the segment as a SYN segment?  \cf0 \
+The [SYN] tag and the flags SYN = 1\
+\
+\cf2 Opgave 5\\\
+What is the sequence number of the SYNACK segment sent by gaia.cs.umass.edu to the client computer in reply to the SYN? \
+\cf0 SEQ.NO. = 0 \
+\
+\cf2 What is the value of the Acknowledgement field in the SYNACK segment?  \cf0 \
+ACK = 1\
+\cf2 How did gaia.cs.umass.edu determine that value?\
+What is it in the segment that identifies the segment as a SYNACK segment? \cf0 \
+The [SYN, ACK] tag and the flags SYN = 1 ACK = 1\
+\
+\cf2 Opgave 6 \
+What is the sequence number of the TCP segment containing the HTTP POST command?\cf0 \
+SEQ.NO. = 1\
+\
+\cf2 Opgave 7 / Opgave 8\
+Consider the TCP segment containing the HTTP POST as the first segment in the TCP connection. What are the sequence numbers of the first six segments in the TCP connection (including the segment containing the HTTP POST)?  At what time was each segment sent?   What is the length of each of the first six TCP segments?\cf0 \
+\
+1 	TIME 1.363362 	SEQ.NO. = 1 		LENGTH = 1400\\\
+2 	TIME 1.363363 	SEQ.NO. = 1401	LENGTH = 1400\\\
+3 	TIME 1.363363 	SEQ.NO. = 2801	LENGTH = 1400\\\
+4 	TIME 1.398404 	SEQ.NO. = 4201	LENGTH = 1400\\\
+5 	TIME 1.398404 	SEQ.NO. = 5601	LENGTH = 1400\\\
+6 	TIME 1.398405 	SEQ.NO. = 7001	LENGTH = 1400\\\
+\
+\cf2 Opgave 9\
+Are there any retransmitted segments in the trace file? What did you check for (in the trace) in order to answer this question?\
+\cf0 No. I checked for any retransmission tags, timeout and if any acknowledge messages were off.\
+\
+\cf2 Opgave 10\cf0 \
+\
+I = R * T}
